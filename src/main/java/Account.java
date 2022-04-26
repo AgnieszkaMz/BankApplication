@@ -69,4 +69,12 @@ public class Account {
         }
 
     }
+    public boolean search(String accountNumber) {
+        if(AccountNumber.equals(accountNumber)) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
 }
