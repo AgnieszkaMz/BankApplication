@@ -49,4 +49,10 @@ public class Account {
         System.out.println("Account number: "+AccountNumber);
         System.out.println("Balance: "+balance);
     }
+    public void depositMoney() {
+        System.out.println("How much you want to deposit?: ");
+        long amount = scanner.nextLong();
+        balance = balance + amount;
+        System.out.println("Your current balance is: "+balance);
+    }
 }

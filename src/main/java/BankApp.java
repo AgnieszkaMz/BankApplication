@@ -2,8 +2,8 @@ import java.util.Scanner;
 public class BankApp {
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner (System.in);
-        Account account = new Account ();
+        Scanner scanner = new Scanner(System.in);
+        Account account = new Account();
 
         account.createAccount();
         System.out.println("Hello in our bank!");
@@ -16,6 +16,9 @@ public class BankApp {
         switch (choice) {
             case 1:
                 account.showAccount();
+            case 2:
+                account.depositMoney();
         }
     }
 }
+
